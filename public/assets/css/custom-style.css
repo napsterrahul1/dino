@@ -1,0 +1,176 @@
+/* CSS Document */
+body, div, span, h1, h2, h3, h4, h5, h6,.user-info .designattion, .btn-light, .user-info .user-name{
+	color: #04060a	;
+	font-family: 'Rubik', sans-serif;
+}
+label {
+	color: #04060a;
+}
+.logo-icon{
+	width: 130px	
+}
+.sidebar-header{
+	background-color: #fff
+}
+.fw-600{
+	font-weight: 600;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #4b5663 !important;
+	opacity: 1; /* Firefox */
+}
+.border{
+	border: 1px solid rgb(0 0 0 / 15%)!important;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #4b5663 !important;
+}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color: #4b5663 !important;
+}
+.page-content{
+	min-height: 90vh;	
+}
+.bg-banner-10{
+	background-image: url("../banner/banner-1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.bg-banner-11{
+	background-image: url("../banner/banner-2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.bg-banner-12{
+	background-image: url("../banner/banner-3.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.bg-banner-13{
+	background-image: url("../banner/banner-4.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.bg-banner-14{
+	background-image: url("../banner/banner-5.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.login-banner{
+	background-image: url("../images/login-banner-1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.form-control{
+	/* -webkit-appearance: none; */
+	appearance: none;
+	background-clip: padding-box;
+	background-color: #fff;
+	border: 1px solid #d1d5db;
+	border-radius: 4px;
+	box-shadow: 0;
+	color: #111927;
+	display: block;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: .5rem 1rem;
+	width: 100%;
+}
+.sidebar-wrapper{
+
+    background-color: rgba(255, 255, 255, 0.75);
+    
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.card, .dropdown-menu{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.dropdown-menu{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #f2f4f6;
+	color: #04060a !important;
+    border-radius: 8px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.dropdown-item{
+	color: #04060a !important;
+}
+.topbar{
+	backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75) !important;
+
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.topbar .navbar .navbar-nav .nav-link{
+	display: none;
+}
+.mx-input-300{
+	max-width: 300px;
+}
+.logo-text, .search-bar {
+	display: none;
+}
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
+.form-check-input:checked {
+    background-color: #407403;
+    border-color: #0d6efd;
+}
+.sidebar-wrapper .metismenu .mm-active>a, .sidebar-wrapper .metismenu a:active, .sidebar-wrapper .metismenu a:focus, .sidebar-wrapper .metismenu a:hover{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+}
+.btn {
+	padding: 0.2rem 1.75rem;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+table, th, tr, td{
+ color: #04060a !important;	
+}
+.form-select{
+	background-color: #fff !important;
+	color: #04060a !important;
+	border: 1px solid #4b5663 !important;
+}
+th{
+	font-weight: 600 !important;
+}
+table tr:nth-child(n+1){
+	background-color: #f9f9f9;
+}
+table tr:nth-child(n+2){
+	background-color: #fff;
+}
+.page-item.disabled .page-link{
+	color: #04060a;
+}
+.page-item.active .page-link{
+	color: #04060a;
+}
