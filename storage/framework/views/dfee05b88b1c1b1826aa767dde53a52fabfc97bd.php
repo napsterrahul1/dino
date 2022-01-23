@@ -8,7 +8,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <div class="p-4 border rounded">
+                    <div class="p-3 border rounded">
 
 
                         <form class="row g-3" action="" method="post">

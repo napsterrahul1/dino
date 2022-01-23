@@ -8,7 +8,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
 
 
@@ -42,10 +42,10 @@
                                 <label for="" class="form-label w-100">Can you tolerate hunger / Need to eat Immediately when hungry?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="tolerateThermoHunger" id="tolerateThermoHunger1"  >
-                                    <label class="btn btn-outline-primary" for="tolerateThermoHunger1">Yes</label>
+                                    <label class="btn btn-outline-success" for="tolerateThermoHunger1">Yes</label>
 
                                     <input type="radio" class="btn-check" name="tolerateThermoHunger" id="tolerateThermoHunger2" >
-                                    <label class="btn btn-outline-primary" for="tolerateThermoHunger2">No</label>
+                                    <label class="btn btn-outline-success" for="tolerateThermoHunger2">No</label>
 
                                 </div>
                             </div>
@@ -114,10 +114,10 @@
                                 <label for="stoolProblems1" class="form-label w-100">Any problem in your Stools?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="stoolProblems" id="stoolProblems1"  >
-                                    <label class="btn btn-outline-primary" for="stoolProblems1">Yes</label>
+                                    <label class="btn btn-outline-success" for="stoolProblems1">Yes</label>
 
                                     <input type="radio" class="btn-check" name="stoolProblems" id="stoolProblems2" >
-                                    <label class="btn btn-outline-primary" for="stoolProblems2">No</label>
+                                    <label class="btn btn-outline-success" for="stoolProblems2">No</label>
 
                                 </div>
                             </div>
@@ -177,18 +177,18 @@
                                 <label for="" class="form-label w-100">Any problem in your Urine?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="problemUrine" id="problemUrine1"  >
-                                    <label class="btn btn-outline-primary" for="problemUrine1">Yes</label>
+                                    <label class="btn btn-outline-success" for="problemUrine1">Yes</label>
                                     <input type="radio" class="btn-check" name="problemUrine" id="problemUrine2" >
-                                    <label class="btn btn-outline-primary" for="problemUrine2">No</label>
+                                    <label class="btn btn-outline-success" for="problemUrine2">No</label>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <label for="" class="form-label">How is your Urine?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="checkbox" class="btn-check" id="yourUrine1" >
-                                    <label class="btn btn-outline-primary" for="yourUrine1">Voluntary     </label>
+                                    <label class="btn btn-outline-success" for="yourUrine1">Voluntary     </label>
                                     <input type="checkbox" class="btn-check" id="yourUrine2" >
-                                    <label class="btn btn-outline-primary" for="yourUrine2">Involuntary     </label>
+                                    <label class="btn btn-outline-success" for="yourUrine2">Involuntary     </label>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -229,9 +229,9 @@
                                 <label for="" class="form-label">Do you perspire on palms or soles?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="checkbox" class="btn-check" id="palms" >
-                                    <label class="btn btn-outline-primary" for="palms">Palms</label>
+                                    <label class="btn btn-outline-success" for="palms">Palms</label>
                                     <input type="checkbox" class="btn-check" id="soles" >
-                                    <label class="btn btn-outline-primary" for="soles">Soles</label>
+                                    <label class="btn btn-outline-success" for="soles">Soles</label>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -444,9 +444,9 @@
                                 <label for="" class="form-label w-100">Can you tolerate hunger / Need to eat Immediately when hungry?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="tolerateHunger" id="tolerateHunger1">
-                                    <label class="btn btn-outline-primary" for="tolerateHunger1">Yes</label>
+                                    <label class="btn btn-outline-success" for="tolerateHunger1">Yes</label>
                                     <input type="radio" class="btn-check" name="tolerateHunger" id="tolerateHunger2">
-                                    <label class="btn btn-outline-primary" for="tolerateHunger2">No</label>
+                                    <label class="btn btn-outline-success" for="tolerateHunger2">No</label>
                                 </div>
                             </div>
                         </form>
@@ -512,9 +512,9 @@
                                 <label for="" class="form-label w-100">Can you tolerate tight clothing:</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="tightClothing" id="tightClothing1"  >
-                                    <label class="btn btn-outline-primary" for="tightClothing1"> Around the Neck</label>
+                                    <label class="btn btn-outline-success" for="tightClothing1"> Around the Neck</label>
                                     <input type="radio" class="btn-check" name="tightClothing" id="tightClothing2" >
-                                    <label class="btn btn-outline-primary" for="tightClothing2"> Around the Waist</label>
+                                    <label class="btn btn-outline-success" for="tightClothing2"> Around the Waist</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -597,7 +597,7 @@
     } );
 
 
- 
+
 </script>
 
 <?php $__env->stopSection(); ?>

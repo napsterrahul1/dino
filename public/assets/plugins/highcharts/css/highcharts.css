@@ -228,8 +228,8 @@ g.highcharts-series,
 /* Series options */
 /* Default colors */
 .highcharts-color-0 {
-  fill: #0d6efd;
-  stroke: #0d6efd;
+  fill: #224d89;
+  stroke: #224d89;
 }
 
 .highcharts-color-1 {
@@ -238,13 +238,13 @@ g.highcharts-series,
 }
 
 .highcharts-color-2 {
-  fill: #ffc107;
-  stroke: #ffc107;
+  fill: #fbb031;
+  stroke: #fbb031;
 }
 
 .highcharts-color-3 {
-  fill: #17a00e;
-  stroke: #17a00e;
+  fill: #3f7100;
+  stroke: #3f7100;
 }
 
 .highcharts-color-4 {

@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts/message') 
+
 <!-- END: Main Menu-->
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Preliminary Data</h4>
+        @include('layouts/message')
+        <h4 class="mb-0">Follow ups</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -80,22 +81,50 @@
 </div>
 
 
-   
+
 @endsection
 
 @section('js')
 <script>
     $(document).ready(function() {
-        $('#example').DataTable();
+        $('#example').DataTable({
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
+        });
       } );
 </script>
 <script>
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            buttons: [ 'copy', 'excel', 'pdf', 'print']
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
-     
+
         table.buttons().container()
             .appendTo( '#example2_wrapper .col-md-6:eq(0)' );
     } );

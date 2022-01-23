@@ -2,12 +2,12 @@
 @section('title','New Patient')
 
 @section('content')
-@include('layouts/message') 
+
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 fw-600 text-white">Preliminary Data</h4>
-        <hr/>
+        @include('layouts/message')
+        <h4 class="mb-2 ">Add Patient</h4>
         <div class="card">
             <div class="card-body">
                 <div class="p-3 border rounded">
@@ -74,11 +74,11 @@
                                 <label class="form-check-label" for="inlineRadio1">Single</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="married">
+                                <input class="form-check-input" type="radio" name="martial" id="inlineRadio2" value="married">
                                 <label class="form-check-label" for="inlineRadio2">Married</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="divorce">
+                                <input class="form-check-input" type="radio" name="martial" id="inlineRadio3" value="divorce">
                                 <label class="form-check-label" for="inlineRadio3">Divorce</label>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                         </div>
                         <div class="col-md-4">
                             <label for="validationDefault03" class="form-label">Landline Number</label>
-                            <input type="number" class="form-control" id="validationDefault03" name="lnumber" required placeholder="e.g. 0206758292">
+                            <input type="number" class="form-control" id="validationDefault03" name="lnumber" placeholder="e.g. 0206758292">
                         </div>
 
                         <div class="col-md-4">

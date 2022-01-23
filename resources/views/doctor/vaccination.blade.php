@@ -11,7 +11,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
 
 
@@ -27,9 +27,9 @@
                                 <label for="" class="form-label w-100">Was there any reaction after any vaccination?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="vaccination" @if($data->vaccination=='yes') checked @endif value="yes" id="vaccination1"  >
-                                    <label class="btn btn-outline-primary" for="vaccination1">Yes</label>
+                                    <label class="btn btn-outline-success" for="vaccination1">Yes</label>
                                     <input type="radio" class="btn-check" name="vaccination" @if($data->vaccination=='no') checked @endif value="no" id="vaccination2" >
-                                    <label class="btn btn-outline-primary" for="vaccination2">No</label>
+                                    <label class="btn btn-outline-success" for="vaccination2">No</label>
                                 </div>
                             </div>
                         </div>

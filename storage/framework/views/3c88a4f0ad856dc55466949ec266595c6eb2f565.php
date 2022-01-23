@@ -1,4 +1,4 @@
- 
+
 <?php $__env->startSection('title', 'Sales'); ?>
 <?php $__env->startSection('content'); ?>
 	<div class="container-fluid">
@@ -41,7 +41,7 @@
 		                            </div>
 		                        </div>
 		                    </div>
-	                        
+
 		                </div>
 		                <div class="col col-sm-6">
 		                    <div class="card-search with-adv-search dropdown">
@@ -97,7 +97,7 @@
 		                        <span class="mr-5" id="top">1 - 50 of 2,500</span>
 		                        <a href="#"><i class="ik ik-chevron-left"></i></a>
 		                        <a href="#"><i class="ik ik-chevron-right"></i></a>
-		                        <a href="/sales/create" class=" btn btn-outline-primary btn-semi-rounded">Add Sale</a>
+		                        <a href="/sales/create" class=" btn btn-outline-success btn-semi-rounded">Add Sale</a>
 		                    </div>
 		                </div>
 		            </div>
@@ -146,18 +146,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -187,18 +187,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -228,18 +228,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -269,18 +269,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -310,18 +310,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -351,18 +351,18 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
@@ -392,25 +392,25 @@
 				                            <div class="dropdown-menu dropdown-menu-right">
 				                            	<a class="dropdown-item" href="/sales/1/edit"><i class="ik ik-edit"></i> Edit </a>
 				                                <a class="dropdown-item" href="#InvoiceModal" data-toggle="modal" data-target="#InvoiceModal">
-				                                	<i class="ik ik-file-text"></i> 
+				                                	<i class="ik ik-file-text"></i>
 				                                	Preveiw Invoice
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-printer"></i> 
+				                                	<i class="ik ik-printer"></i>
 				                                	Invoice POS
 				                            	</a>
 				                            	<a class="dropdown-item">
-				                                	<i class="ik ik-mail"></i> 
+				                                	<i class="ik ik-mail"></i>
 				                                	Send on Email
 				                            	</a>
-				                                
+
 				                                <a class="dropdown-item" href="#">
 				                                	<i class="ik ik-trash"></i> Delete </a>
 				                            </div>
 				                        </div>
 		                            </td>
 		                        </tr>
-		                        
+
 		                    </tbody>
 		                </table>
 		            </div>

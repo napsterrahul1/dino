@@ -1,5 +1,5 @@
 @if($pid)
-<ul class="nav nav-pills" style="background: #cfcbc7;">
+<ul class="nav nav-pills top-head-pills" >
     <li class="nav-item">
         <a class="nav-link {{ request()->is('history') ? 'active' : '' }}" aria-current="page" href="{{ url('history') }}?id={{ $pid }}">Preliminary Details</a>
     </li>
@@ -32,7 +32,7 @@
     </li>
 </ul>
 @else
-    <ul class="nav nav-pills" style="background: #cfcbc7;">
+    <ul class="nav nav-pills top-head-pills" ">
         <li class="nav-item">
             <a class="nav-link {{ request()->is('history') ? 'active' : '' }}" aria-current="page" href="{{ url('history') }}">Preliminary Details </a>
         </li>

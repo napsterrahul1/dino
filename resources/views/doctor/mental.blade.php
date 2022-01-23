@@ -9,20 +9,22 @@
         <div class="card">
             @include('doctor.head')
         </div>
+        <h4 class="mb-0 card-form-head">Mental Make-up
+        </h4>
+
+        <hr class="mb-4">
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
                     <form class="row g-3" action="" method="post">
                         {!! csrf_field()  !!}
                         <input type="hidden" name="mental_id" value="{{ $data->mental_id }}">
 
 
                         <div class="next_prev_div">
-                        <h4 class="mb-2 card-form-head">Mental Make-up
-                        </h4>
 
-                        <hr>
-                        <h5>Describe your Nature</h5>
+                        <h5 class="mb-0">Describe your Nature</h5>
+                            <hr class="w-25 mt-2 mb-3">
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Are you Mild or Angry? If angry how do you release your anger?</label>
@@ -150,9 +152,11 @@
                             </div>
                         </div>
 
-                        <hr>
+                        <hr class="mb-4">
                         <h5>Childhood</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Any history of parental domination ?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="childhood_history">{{$data->childhood_history}}</textarea>
@@ -174,9 +178,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="childhood_impression">{{$data->childhood_impression}}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>School Days</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Your Academic status?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="school_status">{{$data->school_status}}</textarea>
@@ -202,9 +208,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="school_specific">{{$data->school_specific}}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>College Days</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Academics and Graduation details?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="college_details">{{$data->college_details}}</textarea>
@@ -226,9 +234,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="college_specific">{{$data->college_specific}}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>Home/Work Environment</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Describe Your Home?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="work_home">{{$data->work_home}}</textarea>
@@ -269,9 +279,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="work_contributions">{{$data->work_contributions}}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>Traumatic Experiences /Disappointments</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Any Fraud, tragedy, shock, human loss, accidents etc?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="traumatic_fraud">{{$data->traumatic_fraud}}</textarea>
@@ -281,9 +293,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="tarumatic_disturbed">{{$data->tarumatic_disturbed }}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>Relations</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Describe your Relations with Family, Friends, Neighbours ?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="relation_family">{{$data->relation_family }}</textarea>
@@ -305,9 +319,11 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="realtion_disappointments">{{$data->realtion_disappointments }}</textarea>
                             </div>
                         </div>
-<hr>
+    <hr class="mb-4">
                         <h5>Sexual History</h5>
-                        <div class="row g-3">
+                            <hr class="w-25 mt-2 mb-3">
+
+                            <div class="row g-3">
                             <div class="col-md-4">
                                 <label for="exampleFormControlTextarea1" class="form-label">Describe Your Sexual Relations?</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="sexual_relations">{{$data->sexual_relations }}</textarea>

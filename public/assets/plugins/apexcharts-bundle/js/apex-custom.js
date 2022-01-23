@@ -500,7 +500,7 @@ $(function () {
 		tooltip: {
 			theme: 'dark',
 		},
-		
+
 	};
 	var chart = new ApexCharts(document.querySelector("#chart6"), options);
 	chart.render();
@@ -761,7 +761,7 @@ $(function () {
 			height: 380,
 			type: 'pie',
 		},
-		colors: ["#673ab7", "#32ab13", "#f02769", "#ffc107", "#198fed"],
+		colors: ["#673ab7", "#32ab13", "#f02769", "#fbb031", "#198fed"],
 		labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
 		responsive: [{
 			breakpoint: 480,
@@ -785,7 +785,7 @@ $(function () {
 			height: 380,
 			type: 'donut',
 		},
-		colors: ["#673ab7", "#32ab13", "#f02769", "#ffc107", "#198fed"],
+		colors: ["#673ab7", "#32ab13", "#f02769", "#fbb031", "#198fed"],
 		responsive: [{
 			breakpoint: 480,
 			options: {
@@ -802,7 +802,7 @@ $(function () {
 	chart.render();
 	// chart 13
 	/*
-  
+
 	var options = {
           series: [70],
           chart: {
@@ -822,7 +822,7 @@ $(function () {
 
         var chart = new ApexCharts(document.querySelector("#chart13"), options);
         chart.render();
-		
+
 		*/
 	// chart 14
 	/*
@@ -858,7 +858,7 @@ $(function () {
 
         var chart = new ApexCharts(document.querySelector("#chart14"), options);
         chart.render();
-		
+
 		*/
 	// chart 15
 	var options = {

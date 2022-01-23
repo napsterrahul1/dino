@@ -1,9 +1,9 @@
 <?php $__env->startSection('content'); ?>
-<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?> 
+<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Preliminary Data</h4>
+        <h4 class="mb-0">Preliminary Data</h4>
         <hr/>
         <div class="card">
             <div class="card-body">

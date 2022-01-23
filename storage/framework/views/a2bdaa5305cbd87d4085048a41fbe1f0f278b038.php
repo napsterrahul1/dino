@@ -10,7 +10,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
                     <form class="row g-3" action="" method="post">
                         <?php echo csrf_field(); ?>
 
@@ -24,18 +24,18 @@
                                 <label for="" class="form-label w-100">Delayed or On time ?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" <?php if($data->milestone_delay=='yes'): ?> checked <?php endif; ?> name="milestone_delay" id="milestoneHistory1"  value="yes">
-                                    <label class="btn btn-outline-primary" for="milestoneHistory1">Yes</label>
+                                    <label class="btn btn-outline-success" for="milestoneHistory1">Yes</label>
                                     <input type="radio" class="btn-check" <?php if($data->milestone_delay=='no'): ?> checked <?php endif; ?> name="milestone_delay" id="milestoneHistory2" value="no">
-                                    <label class="btn btn-outline-primary" for="milestoneHistory2">No</label>
+                                    <label class="btn btn-outline-success" for="milestoneHistory2">No</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <label for="teething" class="form-label w-100">Teething, any problem?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" <?php if($data->milestone_teething=='yes'): ?> checked <?php endif; ?> name="milestone_teething" id="teething1"  value="yes">
-                                    <label class="btn btn-outline-primary" for="teething1">Yes</label>
+                                    <label class="btn btn-outline-success" for="teething1">Yes</label>
                                     <input type="radio" class="btn-check" <?php if($data->milestone_teething=='no'): ?> checked <?php endif; ?> name="milestone_teething" id="teething2" value="no">
-                                    <label class="btn btn-outline-primary" for="teething2">No</label>
+                                    <label class="btn btn-outline-success" for="teething2">No</label>
                                 </div>
                             </div>
                             <div class="col-md-4">

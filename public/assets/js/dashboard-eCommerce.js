@@ -319,7 +319,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -401,7 +401,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -483,7 +483,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -565,7 +565,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -647,7 +647,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -729,7 +729,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -811,7 +811,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -893,7 +893,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -975,7 +975,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -1057,7 +1057,7 @@ $(function() {
 			shadeIntensity: 0.5,
 			gradientToColors: ["#fff"],
 			inverseColors: true,
-			opacityFrom: 0.2,	
+			opacityFrom: 0.2,
 			opacityTo: 0.5,
 			stops: [0, 50, 100],
 			colorStops: []
@@ -1117,7 +1117,7 @@ $(function() {
 					return "$ " + e + " thousands"
 				}
 			}
-		},   
+		},
 		labels: ["Kids", "Men", "Women", "Furniture"],
 		responsive: [{
 			breakpoint: 480,
@@ -1394,7 +1394,7 @@ $(function() {
 				left: 14,
 				blur: 4,
 				opacity: .12,
-				color: "#0d6efd"
+				color: "#224d89"
 			},
 			sparkline: {
 				enabled: !1
@@ -1402,7 +1402,7 @@ $(function() {
 		},
 		markers: {
 			size: 0,
-			colors: ["#0d6efd"],
+			colors: ["#224d89"],
 			strokeColors: "#fff",
 			strokeWidth: 2,
 			hover: {
@@ -1546,7 +1546,7 @@ $(function() {
 				left: 10,
 				blur: 3,
 				opacity: .1,
-				color: "#0d6efd"
+				color: "#224d89"
 			},
 			sparkline: {
 				enabled: !1

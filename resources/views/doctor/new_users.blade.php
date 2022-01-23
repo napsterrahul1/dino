@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts/message') 
+
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Preliminary Data</h4>
-        <hr/>
+        @include('layouts/message')
+        <h4 class="mb-2">New User</h4>
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -60,7 +60,21 @@
                 style:    'os',
                 selector: 'td:first-child'
             },
-            order: [[ 1, 'asc' ]]
+            order: [[ 1, 'asc' ]],
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
     } );
 </script>

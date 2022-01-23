@@ -5,22 +5,21 @@
     <!-- END: Main Menu-->
     <div class="page-wrapper">
         <div class="page-content">
-
+            <h4 class="mb-0 card-form-head">Prescription</h4>
+            <hr>
             <div class="card">
                 <div class="card-body">
-                    <div class="p-4 border rounded">
+                    <div class="p-3 border rounded">
 
 
 
                         <div class="next_prev_div">
-                            <h4 class="mb-2 card-form-head">Prescription</h4>
-                            <hr>
                             <div class="d-flex align-items-start">
                                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     @foreach($data as $key=>$d)
                                         <button class="nav-link @if($key==0) active @endif" id="complain{{ $key+1 }}-tab" data-bs-toggle="pill" data-bs-target="#complain{{ $key+1 }}" type="button" role="tab" aria-controls="complain{{ $key+1 }}" aria-selected="true">prescription {{ $key+1 }}</button>
                                     @endforeach
-                                    <button class="nav-link" id="complain0-tab" data-bs-toggle="pill" data-bs-target="#complain0" type="button" role="tab" aria-controls="complain0" aria-selected="false">ADD prescription</button>
+                                    <button class="btn btn-info" id="complain0-tab" data-bs-toggle="pill" data-bs-target="#complain0" type="button" role="tab" aria-controls="complain0" aria-selected="false">Add Prescription</button>
 
 
                                 </div>

@@ -986,24 +986,24 @@ body.lobibox-open {
 }
 
 .lobibox-notify.lobibox-notify-success {
-	border-color: #17a00e;
-	background-color: #17a00e;
+	border-color: #3f7100;
+	background-color: #3f7100;
 	color: #FFF
 }
 
 .lobibox-notify.lobibox-notify-success:hover {
-	background-color: #17a00e;
+	background-color: #3f7100;
 	border-color: #FFF
 }
 
 .lobibox-notify.lobibox-notify-warning {
-	border-color: #ffc107;
-	background-color: #ffc107;
+	border-color: #fbb031;
+	background-color: #fbb031;
 	color: #212529
 }
 
 .lobibox-notify.lobibox-notify-warning:hover {
-	background-color: #ffc107;
+	background-color: #fbb031;
 	border-color: #212529
 }
 

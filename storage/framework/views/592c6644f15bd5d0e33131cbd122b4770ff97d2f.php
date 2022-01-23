@@ -1,10 +1,10 @@
 <?php $__env->startSection('content'); ?>
-<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?> 
+<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- END: Main Menu-->
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Preliminary Data</h4>
+        <h4 class="mb-0">Preliminary Data</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -65,7 +65,7 @@
                         <input type="hidden" name="feedback_id" id="feedback_id">
                         <label for="exampleInputEmail1">Reply Description</label>
                         <textarea type="text" class="form-control" id="exampleInputEmail1" rows="3" name="doctor_reply" aria-describedby="emailHelp" placeholder="Enter reply"></textarea>
-                        
+
                     </div>
 
             </div>
@@ -79,7 +79,7 @@
 </div>
 
 
-   
+
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('js'); ?>
@@ -94,7 +94,7 @@
             lengthChange: false,
             buttons: [ 'copy', 'excel', 'pdf', 'print']
         } );
-     
+
         table.buttons().container()
             .appendTo( '#example2_wrapper .col-md-6:eq(0)' );
     } );

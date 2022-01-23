@@ -6,7 +6,7 @@
 
     <div class="page-wrapper">
         <div class="page-content">
-            <h4 class="mb-0 text-uppercase">Testimonials</h4>
+            <h4 class="mb-0">Testimonials</h4>
             <hr/>
             <div class="card">
                 <div class="card-body">

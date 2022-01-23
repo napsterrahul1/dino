@@ -2,16 +2,15 @@
 @section('title','Search Patient')
 
 @section('content')
-@include('layouts/message') 
+
 <!-- END: Main Menu-->
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h6 class="mb-0 fw-600">Patient Result</h6>
-        <hr/>
+        @include('layouts/message')
         <div class="card">
             <div class="card-body">
-                <h6 class="mb-2">Seach Patient</h6>
+                <h6 class="mb-0">Search Patient</h6>
                 <hr>
                 <form class="row g-3" action="{{ url('search-patient') }}" method="get">
                     <div class="col-md-3">
@@ -33,23 +32,25 @@
 
                     <div class="col-12">
                         <button type="submit" class="btn btn-success">Submit</button>
-                        <a href="{{ url('search-patient') }}" class="btn btn-success">Reset</a>
+                        <a href="{{ url('search-patient') }}" class="btn btn-danger">Reset</a>
                     </div>
                 </form>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
+                <h6 class="mb-0 ">Patient Result</h6>
+                <hr>
                 <div class="table-responsive">
                     <table id="example" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Patient Name</th>
                                 <th>View History</th>
-                                <th>CA FOrm</th>
+                                <th>CA Form</th>
                                 <th>Prescription</th>
                                 <th>Medicine Details</th>
-                                <th>FOllow-ups</th>
+                                <th>Follow-ups</th>
                                 <th>Testimonials</th>
                             </tr>
                         </thead>
@@ -58,15 +59,15 @@
 
                             <tr>
                                 <td> <span>{!! $p->fname; !!}</span></td>
-                                <td><a href="{{ url('history') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
-                                <td><a href="{{ url('caseanalysis') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
-                                <td><a href="{{ url('prescription') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
-                                <td><a href="{{ url('medicine-requests') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
-                                <td><a href="{{ url('follow-ups') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
-                                <td><a href="{{ url('testimonials') }}?id={{ $p->user_id }}" class="btn btn-primary">View</a></td>
+                                <td><a href="{{ url('history') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
+                                <td><a href="{{ url('caseanalysis') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
+                                <td><a href="{{ url('prescription') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
+                                <td><a href="{{ url('medicine-requests') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
+                                <td><a href="{{ url('follow-ups') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
+                                <td><a href="{{ url('testimonials') }}?id={{ $p->user_id }}" class="btn btn-table">View</a></td>
                             </tr>
                         @endforeach
-                            
+
                         </tbody>
 
                     </table>
@@ -77,24 +78,49 @@
 </div>
 
 
-   
+
 @endsection
 
 @section('js')
 <script>
     $(document).ready(function() {
-        $('#example').DataTable();
+        $('#example').DataTable({
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
+        });
       } );
 </script>
 <script>
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
-            lengthChange: false,
-            buttons: [ 'copy', 'excel', 'pdf', 'print']
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
-     
-        table.buttons().container()
-            .appendTo( '#example2_wrapper .col-md-6:eq(0)' );
+
     } );
 </script>
 

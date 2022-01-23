@@ -10,7 +10,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
 
 
@@ -82,10 +82,10 @@
                                                 Develpmental Disorder / Autism</label>
                                             <div class="btn-group" role="group" aria-label="">
                                                 <input type="radio" class="btn-check"  name="complaint_autism" @if($d->complaint_autism=='yes') checked @endif id="DisorderDev1"  value="yes">
-                                                <label class="btn btn-outline-primary" for="DisorderDev1">Yes</label>
+                                                <label class="btn btn-outline-success" for="DisorderDev1">Yes</label>
 
                                                 <input type="radio" class="btn-check" name="complaint_autism" @if($d->complaint_autism=='no') checked @endif id="DisorderDev2" value="no">
-                                                <label class="btn btn-outline-primary" for="DisorderDev2">No</label>
+                                                <label class="btn btn-outline-success" for="DisorderDev2">No</label>
 
                                             </div>
                                         </div>
@@ -159,10 +159,10 @@
                                                     Develpmental Disorder / Autism</label>
                                                 <div class="btn-group" role="group" aria-label="">
                                                     <input type="radio" class="btn-check" checked name="complaint_autism" id="DisorderDev1"  >
-                                                    <label class="btn btn-outline-primary" for="DisorderDev1">Yes</label>
+                                                    <label class="btn btn-outline-success" for="DisorderDev1">Yes</label>
 
                                                     <input type="radio" class="btn-check" name="complaint_autism" id="DisorderDev2" >
-                                                    <label class="btn btn-outline-primary" for="DisorderDev2">No</label>
+                                                    <label class="btn btn-outline-success" for="DisorderDev2">No</label>
 
                                                 </div>
                                             </div>
@@ -215,7 +215,20 @@
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            buttons: [ 'copy', 'excel', 'pdf', 'print']
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
 
         table.buttons().container()

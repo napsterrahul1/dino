@@ -9,7 +9,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
 
 
@@ -82,18 +82,18 @@
                                                 Develpmental Disorder / Autism</label>
                                             <div class="btn-group" role="group" aria-label="">
                                                 <input type="radio" class="btn-check"  name="complaint_autism" <?php if($d->complaint_autism=='yes'): ?> checked <?php endif; ?> id="DisorderDev1"  value="yes">
-                                                <label class="btn btn-outline-primary" for="DisorderDev1">Yes</label>
+                                                <label class="btn btn-outline-success" for="DisorderDev1">Yes</label>
 
                                                 <input type="radio" class="btn-check" name="complaint_autism" <?php if($d->complaint_autism=='no'): ?> checked <?php endif; ?> id="DisorderDev2" value="no">
-                                                <label class="btn btn-outline-primary" for="DisorderDev2">No</label>
+                                                <label class="btn btn-outline-success" for="DisorderDev2">No</label>
 
                                             </div>
                                         </div>
-                                        
-                                        
-                                            
-                                            
-                                        
+
+
+
+
+
 
                                         <div class="col-md-4 pt-4">
 
@@ -160,18 +160,18 @@
                                                     Develpmental Disorder / Autism</label>
                                                 <div class="btn-group" role="group" aria-label="">
                                                     <input type="radio" class="btn-check" checked name="complaint_autism" id="DisorderDev1"  >
-                                                    <label class="btn btn-outline-primary" for="DisorderDev1">Yes</label>
+                                                    <label class="btn btn-outline-success" for="DisorderDev1">Yes</label>
 
                                                     <input type="radio" class="btn-check" name="complaint_autism" id="DisorderDev2" >
-                                                    <label class="btn btn-outline-primary" for="DisorderDev2">No</label>
+                                                    <label class="btn btn-outline-success" for="DisorderDev2">No</label>
 
                                                 </div>
                                             </div>
-                                            
-                                            
-                                            
-                                            
-                                            
+
+
+
+
+
 
                                             <div class="col-md-4 pt-4">
 
@@ -187,11 +187,11 @@
                     <div class="nav--card-btn py-4">
                         <?php if($pid): ?>
                         <a href="<?php echo e(url('history')); ?>?id=<?php echo e($pid); ?>" id="display1" class="display nex-pre-btn btn btn-warning px-4 me-4">Prev</a>
-                        
+
                         <a href="<?php echo e(url('makeup')); ?>?id=<?php echo e($pid); ?>" id="display" class="display nex-pre-btn btn btn-info px-4">Next</a>
                         <?php else: ?>
                         <a href="<?php echo e(url('history')); ?>" id="display1" class="display nex-pre-btn btn btn-warning px-4 me-4">Prev</a>
-                        
+
                         <a href="<?php echo e(url('makeup')); ?>" id="display" class="display nex-pre-btn btn btn-info px-4">Next</a>
                         <?php endif; ?>
 

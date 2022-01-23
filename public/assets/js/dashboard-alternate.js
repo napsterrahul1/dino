@@ -225,7 +225,7 @@ var options = {
           shadeIntensity: 0.5,
           gradientToColors: ["#fff"],
           inverseColors: true,
-          opacityFrom: 0.2,	
+          opacityFrom: 0.2,
           opacityTo: 0.5,
           stops: [0, 50, 100],
           colorStops: []
@@ -450,7 +450,7 @@ var options = {
             left: 14,
             blur: 4,
             opacity: 0.12,
-            color: '#0d6efd',
+            color: '#224d89',
         },
         sparkline: {
             enabled: false
@@ -458,7 +458,7 @@ var options = {
     },
     markers: {
         size: 0,
-        colors: ["#0d6efd"],
+        colors: ["#224d89"],
         strokeColors: "#fff",
         strokeWidth: 2,
         hover: {
@@ -472,7 +472,7 @@ var options = {
             endingShape: 'rounded'
         },
     },
-    
+
     dataLabels: {
         enabled: false
     },
@@ -509,7 +509,7 @@ var options = {
     xaxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     },
-    
+
     tooltip: {
         theme: 'dark',
         y: {
@@ -627,7 +627,7 @@ var options = {
             left: 14,
             blur: 4,
             opacity: 0.12,
-            color: '#0d6efd',
+            color: '#224d89',
         },
         sparkline: {
             enabled: true
@@ -635,7 +635,7 @@ var options = {
     },
     markers: {
         size: 0,
-        colors: ["#0d6efd"],
+        colors: ["#224d89"],
         strokeColors: "#fff",
         strokeWidth: 2,
         hover: {
@@ -1086,7 +1086,7 @@ chart.render();
 				drilldown: "Others"
 			}]
 		}],
-		
+
 	});
 
 
@@ -1162,13 +1162,13 @@ chart.render();
 				//drilldown: "Others"
 			}]
 		}],
-		
+
 	});
 
 
 
  // world map
-	
+
  jQuery('#geographic-map-2').vectorMap({
     map: 'world_mill_en',
     backgroundColor: 'transparent',

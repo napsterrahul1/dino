@@ -5,10 +5,10 @@
     <div class="section-authentication-signin d-flex align-items-center justify-content-center my-5 my-lg-0">
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
-                <div class="col-8 mx-auto">
+                <div class="col-6 mx-auto">
                     <div class="card">
                         <div class="card-body">
-                            <div class="border p-4 rounded">
+                            <div class="border p-3 rounded">
                                 <div class="form-body">
                                     <div class="mb-4 text-center ">
                                         <img src="assets/logo/dr_anupama.png" width="180" alt="" />
@@ -47,7 +47,7 @@
                                         <div class="col-12">
                                             <div class="d-grid">
                                                 <button type="submit" class="btn btn-success"><i class="bx bxs-lock-open"></i>Sign in</button>
-                                            
+
                                                 @if (Route::has('password.request'))
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                                     {{ __('Forgot Your Password?') }}

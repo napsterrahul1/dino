@@ -9,18 +9,20 @@
         <div class="card">
             @include('doctor.head')
         </div>
+        <h4 class="mb-0 card-form-head">Specific Mental Set-up
+        </h4>
+        <hr>
         <div class="card">
             <div class="card-body">
 
 
-                    <form class="g-3 p-4 border rounded" action="" method="post">
+                    <form class="g-3 p-3 border rounded" action="" method="post">
                         {!! csrf_field()  !!}
                         <input type="hidden" name="smm_id" value="{{ $data->smm_id }}">
                     <div class="next_prev_div">
-                        <h4 class="mb-2 card-form-head">Specific Mental Set-up
-                        </h4>
 
-                        <hr>
+
+
                         <h5>Basic</h5>
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -213,27 +215,27 @@
                                 </div>
                                 {{-- <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo1"  >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo1"></label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo1"></label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo2" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo2"></label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo2"></label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo3" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo3"></label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo3"></label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo4" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo4"></label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo4"></label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo5" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo5">Social Position</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo5">Social Position</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo6" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo6">Disrespectful Behaviour</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo6">Disrespectful Behaviour</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo7" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo7">Loss in Position</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo7">Loss in Position</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo8" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo8">Loss in Relation</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo8">Loss in Relation</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo9" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo9">Injustice</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo9">Injustice</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo10" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo10">Criticism</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo10">Criticism</label>
                                     <input type="radio" class="btn-check" name="sensitiveTo" id="sensitiveTo11" >
-                                    <label class="btn btn-outline-primary" for="sensitiveTo11">Partialities</label>
+                                    <label class="btn btn-outline-success" for="sensitiveTo11">Partialities</label>
 
                                 </div> --}}
                             </div>

@@ -10,10 +10,10 @@
         }
     </style>
 </head>
-<body class="bg-theme login-banner">
+<body class="bg-theme login-banner mini-design">
   <div class="wrapper">
-    @include('layouts/sidebar') 
-    @include('layouts/menu') 
+    @include('layouts/sidebar')
+    @include('layouts/menu')
     @yield('content')
     @include('layouts/footer')
   </div>

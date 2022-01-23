@@ -7,7 +7,7 @@
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Case Analysis</h4>
+        <h4 class="mb-0">Case Analysis</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -357,7 +357,20 @@
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            buttons: [ 'copy', 'excel', 'pdf', 'print']
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
 
         table.buttons().container()

@@ -135,7 +135,10 @@
 <script>
     $(document).ready(function() {
         $('#example').DataTable();
-			$('#journeyDisease').DataTable();
+			$('#journeyDisease').DataTable(
+
+            );
+
       } );
 </script>
 

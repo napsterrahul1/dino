@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts/message') 
+@include('layouts/message')
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 fw-600">Change Password</h4>
+        <h4 class="mb-0">Change Password</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -16,7 +16,7 @@
                         <p class="text-danger">{{ $error }}</p>
                     @endforeach
 
-                    <div class="p-4 border rounded">
+                    <div class="p-3 border rounded">
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Current Password</label>
                             <input type="password" class="form-control" name="current_password" id="formGroupExampleInput" placeholder="">
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-   
+
 @endsection
 
 @section('js')

@@ -9,7 +9,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
                     <form class=" g-3" action="" method="post">
                         <?php echo e(csrf_field()); ?>
 
@@ -178,10 +178,10 @@
                                 <label for="uploadPic" class="form-label">Upload your Photograph</label>
                                 <input class="form-control" type="file" id="uploadPic">
                             </div>
-                            
-                                
 
-                            
+
+
+
                         </div>
 
                     </div>
@@ -190,11 +190,11 @@
 
                     <div class="nav--card-btn py-4">
                         <?php if($pid): ?>
-                        
+
                         <button class="btn btn-success" type="submit">Update</button>
                         <a href="<?php echo e(url('complaint')); ?>?id=<?php echo e($pid); ?>" id="display" class="display  btn btn-info px-4">Next</a>
                         <?php else: ?>
-                        
+
                         <button class="btn btn-success" type="submit">Update</button>
                         <a href="<?php echo e(url('complaint')); ?>" id="display" class="display  btn btn-info px-4">Next</a>
                         <?php endif; ?>

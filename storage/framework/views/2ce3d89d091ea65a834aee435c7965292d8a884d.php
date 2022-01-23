@@ -6,7 +6,7 @@
 
 <div class="page-wrapper">
     <div class="page-content">
-        <h4 class="mb-0 text-uppercase">Case Analysis</h4>
+        <h4 class="mb-0">Case Analysis</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -91,54 +91,54 @@
                         </div>
                         <hr>
 
-                        
-                            
-                            
-                                
-                                    
-                                        
-                                            
-                                            
-                                                
-                                                
-                                                
-                                            
-                                            
-                                            
-                                            
-                                                
-                                                
-                                                
-                                            
-                                            
-                                                
-                                                
-                                                
-                                            
-                                            
-                                            
-                                            
-                                                
-                                                
-                                                
-                                            
-                                            
-                                        
-                                        
-                                            
-                                            
-                                                
-                                            
-                                            
-                                                
-                                            
 
-                                        
-                                    
-                                
 
-                            
-                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <hr>
                         <div class="row g-3">
                             <div class="col-md-4  border-4 border-end">

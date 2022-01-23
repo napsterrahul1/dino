@@ -11,7 +11,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
                     <form class="row g-3" action="" method="post">
                         {!! csrf_field()  !!}
@@ -45,9 +45,9 @@
                                 <label for="" class="form-label w-100">How Early / Late?</label>
                                 <div class="btn-group" role="group" aria-label="" onabort="birth_how">
                                     <input type="radio" class="btn-check" @if($data->birth_how=='Early') checked @endif name="birth_how" id="howEarlyLate1" value="Early" >
-                                    <label class="btn btn-outline-primary" for="howEarlyLate1">Early</label>
+                                    <label class="btn btn-outline-success" for="howEarlyLate1">Early</label>
                                     <input type="radio" class="btn-check" @if($data->birth_how=='Late') checked @endif name="birth_how" id="howEarlyLate2" value="Late" >
-                                    <label class="btn btn-outline-primary" for="howEarlyLate2">Late</label>
+                                    <label class="btn btn-outline-success" for="howEarlyLate2">Late</label>
                                 </div>
                             </div>
 
@@ -56,9 +56,9 @@
                                     Breech Presentation</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" @if($data->birth_breech=='yes') checked @endif value="yes" name="birth_breech" id="breechPresentation1"  >
-                                    <label class="btn btn-outline-primary" for="breechPresentation1">Yes</label>
+                                    <label class="btn btn-outline-success" for="breechPresentation1">Yes</label>
                                     <input type="radio" class="btn-check" @if($data->birth_breech=='no') checked @endif value="no" name="birth_breech" id="breechPresentation2" >
-                                    <label class="btn btn-outline-primary" for="breechPresentation2">No</label>
+                                    <label class="btn btn-outline-success" for="breechPresentation2">No</label>
                                 </div>
                             </div>
 
@@ -66,9 +66,9 @@
                                 <label for="" class="form-label w-100">Cord around the Neck:</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" @if($data->birth_cord =='yes') checked @endif value="yes" name="birth_cord" id="cordAroundNeck1"  >
-                                    <label class="btn btn-outline-primary" for="cordAroundNeck1">Yes</label>
+                                    <label class="btn btn-outline-success" for="cordAroundNeck1">Yes</label>
                                     <input type="radio" class="btn-check" @if($data->birth_cord =='no') checked @endif value="no" name="birth_cord" id="cordAroundNeck2" >
-                                    <label class="btn btn-outline-primary" for="cordAroundNeck2">No</label>
+                                    <label class="btn btn-outline-success" for="cordAroundNeck2">No</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -93,9 +93,9 @@
                                 <label for="validationDefault03" class="form-label w-100">Did child cry immediately after birth ? If not then after how much time ?</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" @if($data->birth_child_cry=='yes') checked @endif name="birth_child_cry" value="yes" id="childBirthCry1"  >
-                                    <label class="btn btn-outline-primary" for="childBirthCry1">Yes</label>
+                                    <label class="btn btn-outline-success" for="childBirthCry1">Yes</label>
                                     <input type="radio" class="btn-check" @if($data->birth_child_cry=='no') checked @endif name="birth_child_cry" value="no" id="childBirthCry2" >
-                                    <label class="btn btn-outline-primary" for="childBirthCry2">No</label>
+                                    <label class="btn btn-outline-success" for="childBirthCry2">No</label>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,20 @@
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            buttons: [ 'copy', 'excel', 'pdf', 'print']
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        'copy',
+                        'excel',
+                        'csv',
+                        'pdf',
+                        'print'
+                    ]
+                }
+            ]
         } );
 
         table.buttons().container()

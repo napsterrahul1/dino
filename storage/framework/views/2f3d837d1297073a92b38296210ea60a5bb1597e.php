@@ -8,7 +8,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <div class="p-4 border rounded">
+                <div class="p-3 border rounded">
 
 
                     <form class="row g-3" action="" method="post">
@@ -32,10 +32,10 @@
                                 <label for="" class="form-label w-100">Past History of Major Operations/Illnesses</label>
                                 <div class="btn-group" role="group" aria-label="">
                                     <input type="radio" class="btn-check" name="disease_operate" <?php if($data->disease_operate=='yes'): ?> checked <?php endif; ?> id="pastHisotry1" value="yes" >
-                                    <label class="btn btn-outline-primary" for="pastHisotry1">Yes</label>
+                                    <label class="btn btn-outline-success" for="pastHisotry1">Yes</label>
 
                                     <input type="radio" class="btn-check" name="disease_operate" <?php if($data->disease_operate=='no'): ?> checked <?php endif; ?> id="pastHisotry2" value="no">
-                                    <label class="btn btn-outline-primary" for="pastHisotry2">No</label>
+                                    <label class="btn btn-outline-success" for="pastHisotry2">No</label>
 
                                 </div>
                             </div>
