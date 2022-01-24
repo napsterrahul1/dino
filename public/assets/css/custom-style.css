@@ -80,6 +80,13 @@ label {
 }
 input.form-control,textarea.form-control{
     border: 2px solid transparent;
+    margin-bottom: 10px;
+}
+.input-group input.form-control{
+    margin-bottom: 0;
+}
+.input-group{
+    margin-bottom: 10px;
 }
 .form-control:focus{
     color: #000;
@@ -203,7 +210,7 @@ table tr:nth-child(n+2){
     color: #000;
 }
 table.dataTable td, table.dataTable th{
-    padding:5px;
+    padding: 8px;
 }
 .dataTables_length, div.dataTables_wrapper div.dataTables_filter,.dt-buttons.btn-group  {
     display: inline-block;
@@ -269,6 +276,7 @@ margin-bottom: 4px;
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #3f7100;
     color: #fff;
+    border-radius: 8px;
 }
 .card{
     box-shadow:0 4px 6px -1px rgb(0 0 0/0.1),0 2px 4px -2px rgb(0 0 0/0.1);
@@ -277,3 +285,28 @@ margin-bottom: 4px;
 /*.card-body{*/
 /*    padding: 10px;*/
 /*}*/
+
+.badge{
+    color: #323232;
+    font-weight: normal;
+    font-size: 12px;
+}
+.bg-info{
+    color: #fff;
+
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+.sticky.fixed{
+    z-index: 99999999999999;
+    display: block;
+    background-color: #fff;
+    border: 2px solid #f5f5f5;
+}
+.head-card{
+    /* z-index: 9999999999999999999; */
+}

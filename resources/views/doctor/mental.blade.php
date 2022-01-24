@@ -6,9 +6,9 @@
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <div class="card">
+
             @include('doctor.head')
-        </div>
+
         <h4 class="mb-0 card-form-head">Mental Make-up
         </h4>
 

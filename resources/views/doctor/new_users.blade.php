@@ -30,14 +30,14 @@
                             @endforeach
 
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th></th>
-                                <th>Email ID</th>
-                                <th>Phone Number</th>
-                                <th>Name</th>
-                            </tr>
-                        </tfoot>
+<!--                        <tfoot>-->
+<!--                            <tr>-->
+<!--                                <th></th>-->
+<!--                                <th>Email ID</th>-->
+<!--                                <th>Phone Number</th>-->
+<!--                                <th>Name</th>-->
+<!--                            </tr>-->
+<!--                        </tfoot>-->
                     </table>
                 </div>
             </div>

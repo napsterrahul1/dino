@@ -5,14 +5,12 @@
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <div class="card">
+
             @include('doctor.head')
-        </div>
+
         <div class="card">
             <div class="card-body">
                 <div class="p-3 border rounded">
-
-
 
                     <div class="next_prev_div">
                         <h4 class="mb-2 card-form-head">Chief Complaint</h4>
@@ -23,8 +21,6 @@
                                 <button class="nav-link @if($key==0) active @endif" id="complain{{ $key+1 }}-tab" data-bs-toggle="pill" data-bs-target="#complain{{ $key+1 }}" type="button" role="tab" aria-controls="complain{{ $key+1 }}" aria-selected="true">Complain {{ $key+1 }}</button>
                                 @endforeach
                                 <button class="nav-link" id="complain0-tab" data-bs-toggle="pill" data-bs-target="#complain0" type="button" role="tab" aria-controls="complain0" aria-selected="false">ADD COMPLAINT</button>
-
-
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
 
@@ -98,6 +94,7 @@
                                         <div class="col-md-4 pt-4">
 
                                             <button class="btn btn-success" type="submit">Update</button>
+                                            <a class="btn btn-danger" type="submit">Delete</a>
                                         </div>
 
 

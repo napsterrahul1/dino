@@ -6,9 +6,9 @@
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <div class="card">
+
             @include('doctor.head')
-        </div>
+
         <div class="card">
             <div class="card-body">
                 <div class="p-3 border rounded">

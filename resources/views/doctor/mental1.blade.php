@@ -6,9 +6,9 @@
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        <div class="card">
+
             @include('doctor.head')
-        </div>
+
         <h4 class="mb-0 card-form-head">Specific Mental Set-up
         </h4>
         <hr>
@@ -245,11 +245,11 @@
                     <div class="nav--card-btn py-4">
                         @if($pid)
                         <a href="{{ url('mental') }}?id={{ $pid }}" id="display1" class="display nex-pre-btn btn btn-warning px-4 me-4">Prev</a>
-                        <button class="btn btn-success" type="submit">Update</button>
+                        <button class="btn btn-success" type="submit">Submit</button>
 {{--                        <a href="{{ url('') }}?id={{ $pid }}" id="display" class="display nex-pre-btn btn btn-info px-4">Next</a>--}}
                         @else
                         <a href="{{ url('mental') }}" id="display1" class="display nex-pre-btn btn btn-warning px-4 me-4">Prev</a>
-                        <button class="btn btn-success" type="submit">Update</button>
+                        <button class="btn btn-success" type="submit">Submit</button>
 {{--                        <a href="{{ url('') }}" id="display" class="display nex-pre-btn btn btn-info px-4">Next</a>--}}
                         @endif
 

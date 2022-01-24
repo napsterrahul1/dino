@@ -7,7 +7,8 @@
 <div class="page-wrapper">
     <div class="page-content">
         @include('layouts/message')
-        <h4 class="mb-2 ">Add Patient</h4>
+        <h4 class="mb-0 ">Add Patient</h4>
+        <hr>
         <div class="card">
             <div class="card-body">
                 <div class="p-3 border rounded">

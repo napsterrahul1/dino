@@ -2303,7 +2303,8 @@ textarea.form-control-lg {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	width: 100%
+	width: 100%;
+	/* margin-bottom: 10px; */
 }
 .input-group>.form-control,
 .input-group>.form-select {
