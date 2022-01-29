@@ -19,7 +19,6 @@
 	<script src="{{ url('/')}}/assets/js/dashboard-digital-marketing.js"></script>
 	<!--app JS-->
 
-
 	<script src="{{ url('/')}}/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
 	<script src="{{ url('/')}}/assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
-	
+

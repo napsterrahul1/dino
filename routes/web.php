@@ -43,6 +43,8 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/follow-ups', [App\Http\Controllers\DoctorController::class, 'follow_ups'])->name('follow-ups');
 	Route::post('/save-followups', [App\Http\Controllers\DoctorController::class, 'save_followups'])->name('save_followups');
 	Route::get('/medicine-requests', [App\Http\Controllers\DoctorController::class, 'medicine_requests'])->name('medicine-requests');
+	Route::get('/deletemedicine/{id}', [App\Http\Controllers\DoctorController::class, 'deletemedicine'])->name('deletemedicine');
+	Route::get('/deletefeedback/{id}', [App\Http\Controllers\DoctorController::class, 'deletefeedback'])->name('deletefeedback');
 	Route::get('/ajax_form', [App\Http\Controllers\DoctorController::class, 'ajax_form'])->name('ajax_form');
 
 	Route::get('/change-password', [App\Http\Controllers\DoctorController::class, 'change_password'])->name('change-password');

@@ -1,15 +1,10 @@
-@extends('layouts.app')
-
-@section('content')
-
-@include('layouts/message')
-
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- END: Main Menu-->
 
 <div class="page-wrapper">
     <div class="page-content">
-        @include('layouts/message')
-        <h4 class="mb-0">Follow ups</h4>
+        <h4 class="mb-0 text-uppercase">Preliminary Data</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -27,23 +22,26 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($data as $d)
+                        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $d): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr>
-                            <td>{{$d->fname}}</td>
-                            <td>{{$d->subject}}</td>
-                            <td>{{$d->description}}</td>
-                            <td>{{$d->date}}</td>
-                            <td>{{$d->doctor_reply}}</td>
+                            <td><?php echo e($d->fname); ?></td>
+                            <td><?php echo e($d->subject); ?></td>
+                            <td><?php echo e($d->description); ?></td>
+                            <td><?php echo e($d->date); ?></td>
+                            <td><?php echo e($d->doctor_reply); ?></td>
                             <td>
-                                <a href="#" class="btn btn-success" data-id="{{$d->doctor_reply}}" onclick="showMyModalSetTitle('{{ $d->feedback_id }}','{{$d->doctor_reply}}')">Reply</a>
+                                <a href="#" class="btn btn-success" data-id="<?php echo e($d->doctor_reply); ?>" onclick="showMyModalSetTitle('<?php echo e($d->feedback_id); ?>','<?php echo e($d->doctor_reply); ?>')">Reply</a>
                             </td>
                             <td>
-{{--                                <a href="javascript:;" data-toggle="modal" data-id='{{$d->feedback_id}}' class="btn btn-danger" data-target="#exampleModalCenter" >Delete</a>--}}
-                                <a href="{{ url('deletefeedback/'.$d->feedback_id) }}" class="btn btn-danger">Delete</a>
+
+                                <a href="<?php echo e(url('deletefeedback/'.$d->feedback_id)); ?>" class="btn btn-danger">Delete</a>
                             </td>
 
                         </tr>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+
+
                         </tbody>
 
                     </table>
@@ -63,8 +61,9 @@
                 <button type="button" class="close" data-dismiss="modal" onclick="CloseModalPopup();" aria-hidden="true">&times;  </button>
                 <h4 class="modal-title" id="myModalLabel">Doctor Reply</h4>
             </div>
-            <form action="{{ url('save-followups') }}" method="post">
-                {{ csrf_field() }}
+            <form action="<?php echo e(url('save-followups')); ?>" method="post">
+                <?php echo e(csrf_field()); ?>
+
             <div class="modal-body">
 
 
@@ -72,7 +71,7 @@
                         <input type="hidden" name="feedback_id" id="feedback_id">
                         <label for="exampleInputEmail1">Reply Description</label>
                         <textarea type="text" class="form-control" id="exampleInputEmail1" rows="3" name="doctor_reply" aria-describedby="emailHelp" placeholder="Enter reply"></textarea>
-                        {{--<small id="emailHelp" class="form-text text-muted">description</small>--}}
+                        
                     </div>
 
             </div>
@@ -87,47 +86,19 @@
 
 
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <script>
     $(document).ready(function() {
-        $('#example').DataTable({
-            dom: 'lBfrtip',
-            buttons: [
-                {
-                    extend: 'collection',
-                    text: 'Export',
-                    buttons: [
-                        'copy',
-                        'excel',
-                        'csv',
-                        'pdf',
-                        'print'
-                    ]
-                }
-            ]
-        });
+        $('#example').DataTable();
       } );
 </script>
 <script>
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            dom: 'lBfrtip',
-            buttons: [
-                {
-                    extend: 'collection',
-                    text: 'Export',
-                    buttons: [
-                        'copy',
-                        'excel',
-                        'csv',
-                        'pdf',
-                        'print'
-                    ]
-                }
-            ]
+            buttons: [ 'copy', 'excel', 'pdf', 'print']
         } );
 
         table.buttons().container()
@@ -148,4 +119,6 @@
 </script>
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\dino\resources\views/doctor/follow_ups.blade.php ENDPATH**/ ?>

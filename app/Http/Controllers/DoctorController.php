@@ -26,19 +26,21 @@ class DoctorController extends Controller
 
     public function search_patient(Request $request)
     {
-        $patient = DB::table('profile')->get();
-        if(isset($request->email)){
-            $patient->where('email','like', '%' .$request->email);
-        }
-        if(isset($request->phone)){
-            $patient->where('mno','like', '%' .$request->phone);
-        }
-        if(isset($request->first)){
-            $patient->where('fname','like', '%' .$request->first);
-        }
-        if(isset($request->last)){
-            $patient->where('lname','like', '%' .$request->last);
-        }
+        $patient = DB::table('profile')->where(function($query) use ($request) {
+
+            if(isset($request->email)){
+                $query->where('email','like', '%' .$request->email.'%');
+            }
+            if(isset($request->phone)){
+                $query->where('mno','like', '%' .$request->phone.'%');
+            }
+            if($request->first){
+                $query->where('fname','like', '%' .$request->first.'%');
+            }
+            if(isset($request->last)){
+                $query->where('lname','like', '%' .$request->last.'%');
+            }
+        })->get();
 
         return view('doctor.search_patient',compact('patient'));
     }
@@ -69,12 +71,9 @@ class DoctorController extends Controller
 //                    $profile = DB::table('profile')->insert($params);
                     $profile =  DB::insert('INSERT INTO profile (user_id,fname,mname,lname,religion,sex,age,ffname,mfname,mstatus,mnotimes,blgrp,wt,ht,lnumber,mno,email,address,pincode,city,state,country,reffered_by) values ("' . $u_id . '","' . $request->fname . '","' . $request->mname . '","' . $request->lname . '","' . $request->religion . '","' . $request->sex . '","' . $request->age . '","' . $request->fathname. '","' . $request->mothname . '","' . $request->martial . '","' . $request->times . '","' . $request->bloodgrp . '","' . $request->weight . '","' . $request->height . '","' . $request->lnumber . '","' . $request->cnumber . '","' . $request->email . '","' . $request->addr . '","' . $request->pin . '","' . $request->city . '","' . $request->state . '","' . $request->country . '","' . $request->ref . '")');
                 }
-//                dd($profile);
             }else{
                 $u_id = $check->id;
             }
-
-
 
             if ($u_id) {
                 self::insertBlankEntry($u_id,"complaint");
@@ -192,6 +191,18 @@ class DoctorController extends Controller
         }
 //
         return view('doctor.medicine_requests',compact('data'));
+    }
+    public function deletemedicine($id){
+        $data = DB::table('order_medicine')
+            ->where('oid',$id)
+            ->delete();
+        return redirect()->back();
+    }
+    public function deletefeedback($id){
+        $data = DB::table('feedback')
+            ->where('oid',$id)
+            ->delete();
+        return redirect()->back();
     }
     public function change_password(Request $request)
     {

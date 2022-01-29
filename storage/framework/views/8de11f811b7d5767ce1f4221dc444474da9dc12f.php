@@ -1,16 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
-<<<<<<< Updated upstream
-
-=======
-@include('layouts/message')
->>>>>>> Stashed changes
+<?php $__env->startSection('content'); ?>
+<?php echo $__env->make('layouts/message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!-- END: Main Menu-->
 <div class="page-wrapper">
     <div class="page-content">
-        @include('layouts/message')
-        <h4 class="mb-0 ">Medicine Request</h4>
+        <h4 class="mb-0 ">Preliminary Data</h4>
         <hr/>
         <div class="card">
             <div class="card-body">
@@ -27,43 +20,41 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($data as $d)
+                        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $d): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr>
-                            <td>{{ $d->fname }}</td>
-                            <td>{{ $d->medi_description }}</td>
-                            <td>{{ $d->date_of_order }}</td>
+                            <td><?php echo e($d->fname); ?></td>
+                            <td><?php echo e($d->medi_description); ?></td>
+                            <td><?php echo e($d->date_of_order); ?></td>
 
 
                             <td>
-                                @if($d->paidstatus==1 && $d->disaptchstatus==1)
+                                <?php if($d->paidstatus==1 && $d->disaptchstatus==1): ?>
                                     Paid & Dispatch
-                                @elseif($d->disaptchstatus==1)
+                                <?php elseif($d->disaptchstatus==1): ?>
                                     Dispatch
-                                @elseif($d->paidstatus==1)
+                                <?php elseif($d->paidstatus==1): ?>
                                     Paid
-                                @else
+                                <?php else: ?>
                                     NA
-                                @endif
+                                <?php endif; ?>
                             </td>
                             <td>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input my_checkbox" data-id="paid" data-value="{{$d->oid}}"  name="paidstatus" type="checkbox" @if($d->paidstatus==1) checked  @endif id="inlineCheckbox1" value="option1">
+                                    <input class="form-check-input my_checkbox" data-id="paid" data-value="<?php echo e($d->oid); ?>"  name="paidstatus" type="checkbox" <?php if($d->paidstatus==1): ?> checked  <?php endif; ?> id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Paid</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input my_checkbox" data-id="dispatch" data-value="{{$d->oid}}" name="disaptchstatus" @if($d->disaptchstatus==1) checked @endif type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <input class="form-check-input my_checkbox" data-id="dispatch" data-value="<?php echo e($d->oid); ?>" name="disaptchstatus" <?php if($d->disaptchstatus==1): ?> checked <?php endif; ?> type="checkbox" id="inlineCheckbox2" value="option2">
                                     <label class="form-check-label" for="inlineCheckbox2">Dispatch</label>
                                 </div>
                             </td>
-                            <td><a href="{{ url('deletemedicine/'.$d->oid) }}" class="btn btn-danger">Delete</a></td>
+                            <td><a href="<?php echo e(url('deletemedicine/'.$d->oid)); ?>" class="btn btn-danger">Delete</a></td>
                         </tr>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                         </tbody>
 
                     </table>
-
-                    <button class="btn btn-info">Update</button>
                 </div>
             </div>
         </div>
@@ -72,47 +63,21 @@
 
 
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('js')
+<?php $__env->startSection('js'); ?>
 <script>
     $(document).ready(function() {
-        $('#example').DataTable({
-            dom: 'lBfrtip',
-            buttons: [
-                {
-                    extend: 'collection',
-                    text: 'Export',
-                    buttons: [
-                        'copy',
-                        'excel',
-                        'csv',
-                        'pdf',
-                        'print'
-                    ]
-                }
-            ]
-        });
+        $('#example').DataTable();
       } );
 </script>
 <script>
     $(document).ready(function() {
         var table = $('#example2').DataTable( {
-            dom: 'lBfrtip',
-            buttons: [
-                {
-                    extend: 'collection',
-                    text: 'Export',
-                    buttons: [
-                        'copy',
-                        'excel',
-                        'csv',
-                        'pdf',
-                        'print'
-                    ]
-                }
-            ]
+            lengthChange: false,
+            buttons: [ 'copy', 'excel', 'pdf', 'print']
         } );
+
         table.buttons().container()
             .appendTo( '#example2_wrapper .col-md-6:eq(0)' );
     } );
@@ -142,4 +107,6 @@
 
 </script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\dino\resources\views/doctor/medicine_requests.blade.php ENDPATH**/ ?>
