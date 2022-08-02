@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2022 at 06:32 PM
+-- Generation Time: Aug 02, 2022 at 05:19 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -67,6 +67,33 @@ CREATE TABLE `birthhistory` (
 
 INSERT INTO `birthhistory` (`birthhistory_id`, `user_id`, `birth_history`, `birth_child`, `birth_how`, `birth_breech`, `birth_cord`, `birth_wt`, `birth_complications`, `birth_child_cry`, `birth_child_cry_time`, `birth_nursing`) VALUES
 (2, 2, 'Normal', 'Pre mature', 'Late', 'yes', 'yes', '12kg', 'Premature', 'no', '2', 'dfdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blockdates`
+--
+
+CREATE TABLE `blockdates` (
+  `id` int(11) NOT NULL,
+  `from` date NOT NULL,
+  `to` date NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `blockdates`
+--
+
+INSERT INTO `blockdates` (`id`, `from`, `to`, `product_id`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '2022-05-03', '2022-05-11', 1, '2022-05-29 06:04:03', '2022-05-29 02:04:20', '2022-05-29 02:04:20'),
+(2, '2022-05-21', '2022-05-28', 27, '2022-05-29 01:41:57', '2022-05-29 01:41:57', NULL),
+(3, '2022-05-03', '2022-05-11', 27, '2022-05-29 01:52:19', '2022-05-29 02:04:17', '2022-05-29 02:04:17'),
+(4, '2022-05-03', '2022-05-11', 27, '2022-05-29 01:52:35', '2022-05-29 01:52:35', NULL),
+(5, '2022-05-03', '2022-05-11', 27, '2022-05-29 01:53:12', '2022-05-29 01:53:12', NULL);
 
 -- --------------------------------------------------------
 
@@ -427,8 +454,7 @@ CREATE TABLE `order_medicine` (
 --
 
 INSERT INTO `order_medicine` (`oid`, `user_id`, `date_of_order`, `email_id`, `medi_description`, `disaptchstatus`, `paidstatus`) VALUES
-(10, 2, '2014-12-10', '', 'medicine description', 0, 1),
-(11, 2, '2014-12-10', '', 'medicine over', 0, 1);
+(10, 2, '2014-12-10', '', 'medicine description', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -587,6 +613,52 @@ CREATE TABLE `prescription` (
 
 INSERT INTO `prescription` (`prescription_id`, `user_id`, `prescription`, `description`) VALUES
 (114, 2, 'test', 'sss');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `slug` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name_en` varchar(291) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name_hk` varchar(291) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name_cn` varchar(291) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_code` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_card_info_en` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `product_card_info_hk` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `rating` int(11) DEFAULT NULL,
+  `display_price` int(11) DEFAULT NULL,
+  `is_discount` tinyint(1) DEFAULT NULL,
+  `discount_price` int(11) DEFAULT NULL,
+  `product_info_en` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `product_info_hk` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `terms_en` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `terms_hk` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `display_on_frontend` tinyint(1) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `pricing_method` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pricing_method_id` int(10) UNSIGNED DEFAULT NULL,
+  `have_route` int(10) NOT NULL DEFAULT 0,
+  `have_addon` int(10) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `slug`, `name_en`, `name_hk`, `name_cn`, `product_code`, `product_card_info_en`, `product_card_info_hk`, `rating`, `display_price`, `is_discount`, `discount_price`, `product_info_en`, `product_info_hk`, `terms_en`, `terms_hk`, `display_on_frontend`, `created_at`, `updated_at`, `deleted_at`, `pricing_method`, `pricing_method_id`, `have_route`, `have_addon`) VALUES
+(27, 'pp', 'Product 1', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-29 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(28, 'pp', 'Product 21', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-29 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(29, 'pp', 'Product 3\r\n', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-29 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(30, 'pp', 'Product 4\r\n', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-29 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(31, 'pp', 'Product 5\r\n', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-28 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(32, 'pp', 'Product 6\r\n', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-28 06:07:11', NULL, NULL, NULL, NULL, 0, 0),
+(33, 'pp', 'Product 5\r\n', 'Product 1', 'Product 1', '001', 'Product 1', 'Product 1', 4, 100, NULL, NULL, 'Product 1', 'Product 1', NULL, NULL, NULL, '2022-05-28 06:07:11', NULL, NULL, NULL, NULL, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -884,8 +956,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role_id`, `phone`) VALUES
-(1, 'Admin', 'admin', 'admin@admin.com', '0000-00-00 00:00:00', '$2y$10$yzFQrJltUmniB.UwZBc3nOW.ThcFXNrOnC3PNiN/nLGYkhQs5qcO6', NULL, NULL, '2021-11-30 23:06:58', 1, NULL),
-(2, 'Patient', 'Patient', 'patient@admin.com', '0000-00-00 00:00:00', '$2y$10$Obp58p.YgSAOCYZQ5Asnt.TkGRJhEIV5OpghMnHPCqjCZ/wCD3a/a', NULL, NULL, NULL, 2, NULL);
+(1, 'Dr.Anupama Clinic', 'admin', 'admin@admin.com', '0000-00-00 00:00:00', '$2y$10$F4G/CqUMdvaykIHLsrBwJ.s.EiK5NIDShaAwMtVXIgQmMODYhPjte', NULL, NULL, '2021-11-30 23:06:58', 1, NULL),
+(2, 'devyani', 'chimote', 'patient@admin.com', '0000-00-00 00:00:00', '$2y$10$F4G/CqUMdvaykIHLsrBwJ.s.EiK5NIDShaAwMtVXIgQmMODYhPjte', NULL, NULL, NULL, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -964,6 +1036,12 @@ ALTER TABLE `addictions`
 --
 ALTER TABLE `birthhistory`
   ADD PRIMARY KEY (`birthhistory_id`);
+
+--
+-- Indexes for table `blockdates`
+--
+ALTER TABLE `blockdates`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `case_analysis`
@@ -1068,6 +1146,12 @@ ALTER TABLE `prescription`
   ADD PRIMARY KEY (`prescription_id`);
 
 --
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `profile`
 --
 ALTER TABLE `profile`
@@ -1142,6 +1226,12 @@ ALTER TABLE `addictions`
 --
 ALTER TABLE `birthhistory`
   MODIFY `birthhistory_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+
+--
+-- AUTO_INCREMENT for table `blockdates`
+--
+ALTER TABLE `blockdates`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `case_analysis`
@@ -1238,6 +1328,12 @@ ALTER TABLE `preganacy`
 --
 ALTER TABLE `prescription`
   MODIFY `prescription_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `profile`
