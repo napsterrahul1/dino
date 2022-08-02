@@ -19,8 +19,7 @@
 	<script src="<?php echo e(url('/')); ?>/assets/js/dashboard-digital-marketing.js"></script>
 	<!--app JS-->
 
-
 	<script src="<?php echo e(url('/')); ?>/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
 	<script src="<?php echo e(url('/')); ?>/assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
-	
+
 <?php /**PATH C:\xampp\htdocs\dino\resources\views/layouts/footer.blade.php ENDPATH**/ ?>
